@@ -1,0 +1,81 @@
+$violet: hsl(257, 40%, 49%);
+$magenta: hsl(300, 69%, 71%);
+* {
+  font-family: "Poppins", sans-serif;
+}
+.landing {
+  height: 800px;
+  background-color: $violet;
+  background-image: url(../img/bg-desktop.svg);
+  @media (max-width: 375px) {
+        background-image: url(../img/bg-mobile.svg);
+        background-repeat: no-repeat;
+        height: auto;
+        padding-bottom: 50px;
+  }
+  color: white;
+  position: relative;
+  header {
+    img {
+      margin-top: 50px;
+      width: 200px;
+    }
+  }
+  .mainImage {
+    img {
+      max-width: 650px;
+      @media (max-width: 375px) {
+        width: 100%;
+      }
+    }
+  }
+  h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.5;
+    @media (max-width: 375px) {
+        font-size: 30px;
+    }
+  }
+  p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  button {
+    padding: 10px 50px;
+    background-color: white;
+    color: $violet;
+    border-radius: 25px;
+    @media (max-width: 375px) {
+        padding: 10px 100px;
+    }
+    &:hover {
+      background-color: $magenta;
+      color: white;
+    }
+  }
+  .social {
+    right: 0;
+    bottom: -100px;
+    @media (min-width: 376px) {
+        position: absolute;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        i {
+          color: $magenta;
+        }
+        border-color: $magenta;
+      }
+    }
+  }
+}

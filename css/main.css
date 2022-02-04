@@ -1,0 +1,109 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.landing {
+  height: 800px;
+  background-color: #674baf;
+  background-image: url(../img/bg-desktop.svg);
+  color: white;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .landing {
+    background-image: url(../img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+.landing header img {
+  margin-top: 50px;
+  width: 200px;
+}
+
+.landing .mainImage img {
+  max-width: 650px;
+}
+
+@media (max-width: 375px) {
+  .landing .mainImage img {
+    width: 100%;
+  }
+}
+
+.landing h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 375px) {
+  .landing h1 {
+    font-size: 30px;
+  }
+}
+
+.landing p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.landing button {
+  padding: 10px 50px;
+  background-color: white;
+  color: #674baf;
+  border-radius: 25px;
+}
+
+@media (max-width: 375px) {
+  .landing button {
+    padding: 10px 100px;
+  }
+}
+
+.landing button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+.landing .social {
+  right: 0;
+  bottom: -100px;
+}
+
+@media (min-width: 376px) {
+  .landing .social {
+    position: absolute;
+  }
+}
+
+.landing .social .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.landing .social .icon:hover {
+  border-color: #e882e8;
+}
+
+.landing .social .icon:hover i {
+  color: #e882e8;
+}
+/*# sourceMappingURL=main.css.map */
